@@ -1,0 +1,2608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CHECKLIST>
+    <ASSET>
+        <ASSET_TYPE>Computing</ASSET_TYPE>
+        <HOST_NAME></HOST_NAME>
+        <HOST_IP></HOST_IP>
+        <HOST_MAC></HOST_MAC>
+        <HOST_GUID></HOST_GUID>
+        <HOST_FQDN></HOST_FQDN>
+        <TECH_AREA></TECH_AREA>
+        <TARGET_KEY></TARGET_KEY>
+    </ASSET>
+    <STIGS>
+        <iSTIG>
+            <STIG_INFO>
+                <SI_DATA>
+                    <SID_NAME>version</SID_NAME>
+                    <SID_DATA>1</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>classification</SID_NAME>
+                    <SID_DATA>UNCLASSIFIED</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>customname</SID_NAME>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>stigid</SID_NAME>
+                    <SID_DATA>IIS_7.0_WEB_SERVER_BENCHMARK</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>description</SID_NAME>
+                    <SID_DATA>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>filename</SID_NAME>
+                    <SID_DATA>U_IIS_7-0_Server_V1R9_Manual-xccdf.xml</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>releaseinfo</SID_NAME>
+                    <SID_DATA>Release: 9 Benchmark Date: 23 Oct 2015</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>title</SID_NAME>
+                    <SID_DATA>IIS 7.0 WEB SERVER STIG</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>uuid</SID_NAME>
+                    <SID_DATA>1a9ba599-5265-4daa-a075-9c70c9cb29f3</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>notice</SID_NAME>
+                    <SID_DATA>terms-of-use</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>source</SID_NAME>
+                    <SID_DATA>STIG.DOD.MIL</SID_DATA>
+                </SI_DATA>
+            </STIG_INFO>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2234</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG040</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32631r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG040 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Public web server resources must not be shared with private assets.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>It is important to segregate public web server resources from private resources located behind the DoD DMZ in order to protect private assets. When folders, drives or other resources are directly shared between the public web server and private servers the intent of data and resource segregation can be compromised. 
+
+Resources, such as, printers, files, and folders/directories must not be shared between public web servers and assets located within the internal network. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>EBPW-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. From a command prompt, type "net share" and press Enter to provide a list of available shares (including printers).  
+2. To display the permissions assigned to the shares type "net share" followed by the share name found in the previous step.  
+
+If any private assets are assigned permissions to the share, this is a finding.  If any printers are shared, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Configure the public web server to not have a trusted relationship with any system resource that is also not accessible to the public. Web content is not to be shared via Microsoft shares or NFS mounts.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2235</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG060</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-36487r4_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG060 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The service account ID used to run the website must have its password changed at least annually.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Normally, a service account is established for the web service to run under rather than permitting it to run as system or root.  If the web service account requires a password, the password must be changed at least annually.  It is a fundamental tenet of security that passwords are not to be null and must not be set to never expire.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IAIA-1, IAIA-2</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Go to Start, Administrative Tools, and then Services.
+2. Right-click on service name World Wide Web Publishing Service, Select Properties, and then select the Log On tab.
+3. If “Local System account” is selected for the logon account, this is not a finding.  If the “This account” option is selected, the username given is the web service account ID.
+ 4. Open a command prompt and enter Net User [service account ID], press Enter.
+5. Verify the values for Password last set and Password expires to ensure the password has been changed in the past year and will be required to change within the coming year.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Configure the service account ID used to run the web-site to have its password changed at least annually, or use the local system account.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2236</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG080</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32632r4_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG080 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Installation of compilers on production web servers is prohibited.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The presence of a compiler on a production server facilitates the malicious user’s task of creating custom versions of programs and installing Trojan Horses or viruses.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Using Windows Explorer and/or add-remove programs, search the system for the existence of known compilers, such as, msc.exe, msvc.exe, Python.exe, javac.exe, Lcc-win32.exe, or equivalent.
+
+If a compiler is found on the production server, this is a finding.
+
+NOTE:  If the web server is part of an application suite and a compiler is needed for installation, patching, and upgrading of the suite or if the compiler is embedded and can't be removed without breaking the suite, document the installation of the compiler with the ISSO/ISSM and verify that the compiler is restricted to administrative users only.  If documented and restricted to administrative users, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Remove any compiler found on the production web server, but if the compiler program is needed to patch or upgrade an application suite in a production environment or the compiler is embedded and will break the suite if removed, document the compiler installation with the ISSO/ISSM and ensure that the compiler is restricted to only administrative users.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2242</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA060</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32633r3_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA060 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A public web server, if hosted on the NIPRNet, must be isolated in an accredited DoD DMZ Extension.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>To minimize exposure of private assets to unnecessary risk by attackers, public web servers must be isolated from internal systems.  Public web servers are by nature more vulnerable to attack from publically based sources, such as the public Internet. Once compromised, a public web server might be used as a base for further attack on private resources, unless additional layers of protection are implemented. Public web servers must be located in a DoD DMZ Extension, if hosted on the NIPRNet, with carefully controlled access. Failure to isolate resources in this way increase risk that private assets are exposed to attacks from public sources.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>EBPW-1, ECIC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA> Interview the SA or web administrator to see where the public web server is logically located in the data center. Review the site’s network diagram to see how the web server is connected to the LAN. Visually check the web server hardware connections to see if it conforms to the site’s network diagram.   An improperly located public web server is a potential threat to the entire network.  If the web server is not isolated in an accredited DoD DMZ Extension, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Logically relocate the public web server to be isolated from internal systems. In addition, ensure the public web server does not have trusted connections with assets outside the confines of the demilitarized zone (DMZ) other than application and/or database servers that are a part of the same system as the web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Information Assurance Officer</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2243</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA070</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32634r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA070 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A private web server must be located on a separate controlled access subnet.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Private web servers, which host sites that serve controlled access data, must be protected from outside threats in addition to insider threats, which can cause a disruption in service of the web server. To protect the private web server from these threats, it must be located on a separately controlled access subnet and must not be a part of the public DMZ that houses the public web servers. It also cannot be located inside the enclave as part of the local general population LAN.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>EBPW-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Perform a check of the site’s network diagram and a visual check of the web server. The private web server must be located on a separately controlled access subnet and not part of the public DMZ that houses the public web servers. In addition, the private web server needs to be isolated via a controlled access mechanism from the local general population LAN. If the web server is not located inside the premise router, switch, or firewall, and is not isolated via a controlled access mechanism from the general population LAN, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Isolate the private web server from the public DMZ and separate it from the internal general population LAN. This separation must have access control in place to protect the web server from internal threats.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Information Assurance Officer</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2246</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>high</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG190</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32635r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG190 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The web server must use a vendor-supported version of the web server software.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Several vulnerabilities are associated with older versions of web server software. As hot fixes and patches are issued, these solutions are included in the next version of the server software.  Maintaining the web server at a current version makes the efforts of a malicious user more difficult.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click Help, and select About Internet Information Services.
+3. If the version is less than 7.0, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Install the current version of the web server software and maintain appropriate service packs and patches.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2247</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>high</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG200</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-2247r4_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG200 W13</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Only administrators are allowed access to the directory tree, the shell, or other operating system functions and utilities.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>As a rule, accounts on a web server are to be kept to a minimum. Only administrators, web managers, developers, auditors, and web authors require accounts on the machine hosting the web server. This is in addition to the anonymous web user account. The resources to which these accounts have access must also be closely monitored and controlled. Only the SA needs access to all the system’s capabilities, while the web administrator and associated staff require access and control of the web content and web server configuration files. The anonymous web user account must not have access to system resources as that account could then control the server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECLP-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Obtain a list of the user accounts for the system, noting the priviledges for each account.  
+
+Verify with the system administrator or the ISSO that all privileged accounts are mission essential and documented.
+
+Verify with the system administrator or the ISSO that all non-administrator access to shell scripts and operating system functions are mission essential and documented.
+
+If undocumented privileged accounts are found, this is a finding.
+
+If undocumented access to shell scripts or operating system functions is found, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Ensure non-administrators are not allowed access to the directory tree, the shell, or other operating system functions and utilities.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2248</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG220</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-46357r3_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG220 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Access to web administration tools must be restricted to the web manager and the web managers designees.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The key web service administrative and configuration tools must only be accessible by the web server staff.  All users granted this authority will be documented and approved by the ISSO. Access to the IIS Manager will be limited to authorized users and administrators. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECCD-1, ECCD-2, ECLP-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager and select Properties.
+2. Select the Shortcut tab, and then left-click Open File Location.
+3. Right-click InetMgr.exe, then click Properties from the context menu.
+4. Select the Security tab.
+5. Review the groups and user names.
+
+The following account may have Full control priviledges:
+TrustedInstaller
+
+The following accounts may have read &amp; execute, and read permissions:
+Administrators (non-elevated)
+System
+Users
+
+Specific users may be granted read &amp; execute and read permissions.  Compare the local documentation authorizing specific users, against the specific users observed in step 5.  If any other access is observed, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Restrict access to the web administration tool to only the web manager and the web manager’s designees.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2251</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>low</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG130</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-46363r3_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG130 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Programs and features not necessary for operations must be removed.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Just as running unneeded services and protocols increase the attack surface of the web server, running unneeded utilities and programs is also an added risk to the web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Review programs installed on the OS.
+1. Open Control Panel.
+2. Open Programs and Features.
+3. The following programs may be installed without any additional documentation:
+  Administration Pack for IIS 7.0
+  IIS Search Engine Optimization Toolkit
+  Microsoft .NET Framework version 3.5 SP1 or greater
+  Microsoft Web Platform Installer version 3.x or greater
+  Virtual Machine Additions
+4. Review the installed programs, if any programs are installed other than those listed above, this is a finding.
+
+NOTE: If additional software is needed and has supporting documentation signed by the ISSO, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Remove all unapproved programs and roles from the production web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2257</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>low</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA120</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32638r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA120 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Administrative users and groups with access privilege to the web server must be documented. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>There are typically several individuals and groups involved in running a production web-site. In most cases, several types of users on a web server can be identified, such as, SA's, Web Managers, Auditors, Authors, Developers, and the Clients.  Nonetheless, only necessary user and administrative accounts will be allowed on the web server.  Accounts will be restricted to those who are necessary to maintain web services, review the server’s operation and the OS.  Owing to the sensitivity of web servers, a detailed record of these accounts must be maintained.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECPA-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Determine if the local sites' documentation matches an examination of the privileged IDs on the server. Using User Manager, User Manager for Domains, or Local Users and Groups, examine user accounts to verify the above information. If documentation does not exist for users and groups found on the server, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Document the administrative users and groups which have access rights to the web server in the website SOP or an equivalent document.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2259</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG300</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32332r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG300 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web server system files must conform to minimum file permission requirements.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>This check verifies the key web server system configuration files are owned by the SA or the web administrator controlled account. These same files that control the configuration of the web server, and thus its behavior, must also be accessible by the account running the web service. If these files are altered by a malicious user, the web server would no longer be under the control of its managers and owners; properties in the web server configuration could be altered to compromise the entire server platform.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECCD-1, ECCD-2, ECLP-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open Explorer and navigate to the inetpub directory.
+2. Right-click inetpub and select Properties.
+3. Click the Security tab.
+4. Verify the permissions for the following users; if the permissions are less restrictive, this is a finding.
+
+System: Full control
+Administrators: Full control
+TrustedInstaller: Full control
+Users: Read &amp; execute, list folder contents
+Creator/Owner: Special permissions to subkeys</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open Explorer and navigate to the inetpub directory.
+2. Right-click inetpub and select Properties.
+3. Click the Security tab.
+4. Set the following permissions:
+  System: Full control
+  Administrators: Full control
+  TrustedInstaller: Full control
+  Users: Read &amp; execute, list folder contents
+  Creator/Owner: special permissions to subkeys</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2261</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG330</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32639r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG330 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A web server must limit e-mail to outbound only.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Incoming e-mails have been known to provide hackers with access to servers. Disabling the incoming mail service prevents this type of attacks. Additionally, e-mail is a specialized application requiring the dedication of server resources. A production web server should only provide hosting services for web-sites. Supporting mail services on a web server opens the server to the risk of abuse as an e-mail relay. 
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the Task Manager.
+2. Click the Services tab and look for SMTP service. If the service is running, then this is a finding.
+3. Open Add/Remove Programs to see if there are any e-mail programs installed. Search the system to determine if other e-mail programs are running. If there is an e-mail program installed and that program has been configured to accept inbound e-mail, this is a finding.
+4. If available, telnet to the server under review on port 25. If a response is received, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Disable the SMTP service. 
+2. If other e-mail programs are running remove the programs. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2265</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>low</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG490</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32640r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG490 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Java software installed on the production web server must be limited to .class files and the Java Virtual Machine.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Source code for a Java program is, many times, stored in files with either .java or .jpp file extensions.  From the .java and .jpp files the Java compiler produces a binary file with an extension of .class. The .java or .jpp file could therefore reveal sensitive information regarding an application's logic and permissions to resources on the server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Search the system for files with either .java or .jpp extensions.  If files with .java or .jpp extensions are found, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Remove all files from the web server with either .java and .jpp extensions.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-2271</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG440</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32641r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG440 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Monitoring software must include CGI type files or equivalent programs.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>By their very nature, CGI type files permit the anonymous web user to interact with data and perhaps store data on the web server. In many cases, CGI scripts exercise system-level control over the server’s resources. These files make appealing targets for the malicious user. If these files can be modified or exploited, the web server can be compromised. CGI or equivalent files must be monitored by a security tool alerting the web administrator of any unauthorized changes.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECAT-1, ECAT-2, ECCD-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Request to see the template file or configuration file of the software being used to accomplish this security task.  The monitoring program should provide constant monitoring for these files, and instantly alert the web administrator of any unauthorized changes.  Example CGI file extensions include, but are not limited to, .cgi, .asp, .aspx, .class, .vb, .php, .pl, and .c.
+
+If the monitoring product configuration does not monitor changes to CGI program files, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Configure the monitoring tool to include CGI type files or equivalent programs directory.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-6537</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>high</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG195</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32381r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG195 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Anonymous access accounts must be restricted.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Many of the security problems that occur are not the result of a user gaining access to files or data for which the user does not have permissions, but rather users are assigned incorrect permissions to unauthorized data. The files, directories, and data that are stored on the web server need to be evaluated and a determination made concerning authorized access to information and programs on the server. Only authorized users and administrative accounts will be allowed on the host server in order to maintain the web server, applications, and review the server operations.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECCD-1, ECCD-2, ECLP-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Check the account used for anonymous access to the web site.
+1. Open the IIS Manager.
+2. Click the site being reviewed.
+3. Double-click Authentication in the IIS section of the web site’s Home Pane.
+If Anonymous access is disabled, this check may end here, and is considered not a finding.
+4. If enabled, left-click Anonymous Authentication, and then left-click Edit in the Actions pane.
+5. If the Specific user radio button is enabled and an ID is specified in the adjacent control box, this is the ID being used for anonymous access.
+
+Check privileged groups that may allow the anonymous account inappropriate membership.
+1. Left-click Start and then double-click Server Manager.
+2. Expand Configuration; expand Local Users and Groups; and then left-click Groups.
+3. Review group members.
+Privileged Groups:
+Administrators
+Backup Operators
+Certificate Services (of any designation)
+Distributed COM users
+Event Log Readers
+Network Configuration Operators\Performance Log Users
+Performance Monitor Users
+Power Users
+Print Operators
+Remote Desktop Users
+Replicator
+Users
+4. Double-click each group and review its members.  
+
+If the IUSR account or any account used for anonymous access is a member of any group with privileged access, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Remove the Anonymous access account from all privileged accounts and all privileged groups.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-6577</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG204</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32643r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG204 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A web server must not be co-hosted with other services.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A detailed web server installation and configuration plan should be followed to provide standardization during the installation process.  The installation and configuration plan should not support the co-hosting of multiple services, such as, Domain Name Service (DNS), e-mail, databases, search engines, indexing, or streaming media on the same server that is providing the web publishing service.
+
+Disallowed or restricted services in the context of this vulnerability applies to services that are not directly associated with the delivery of web content. An operating system supporting a web server will not provide other services (e.g., domain controller, email server, database server, etc.). Only those services necessary to support the web server and its hosted sites are specifically allowed and may include, but are not limited to, operating system, logging, anti-virus, host intrusion detection, administrative maintenance, or network requirements. Any unnecessary services or protocols should be removed.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DCPA-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Request a copy of and review the web server’s installation and configuration plan. 
+
+Ensure the server is in compliance with this plan. If the server is not in compliance with the plan, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Remove any services or applications that are not required.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-6754</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI080</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32222r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI080 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The use of Internet Printing Protocol (IPP) must be disabled on the IIS web server. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The use of Internet Printing Protocol (IPP) on an  IIS web server allows client’s access to shared printers.  This privileged access could allow remote code execution by increasing the web servers attack surface.  Additionally, since IPP does not support SSL, it is considered a risk and will not be deployed. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>If the Print Services role and the Internet Printing role are not installed, this check is N/A.
+
+Navigate to the following directory:
+%windir%\web\printers
+If this folder exists, this is a finding.
+
+Determine whether Internet Printing is enabled: 
+1.  Click Start, then click Administrative Tools, and then click Server Manager.
+2.  Expand the roles node, then right-click Print Services, and then select Remove Roles Services.
+3.  If the Internet Printing option is enabled, this is a finding.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Click Start, then click Administrative Tools, and then click Server Manager.
+2. Expand the roles node, then right-click Print Services, and then select Remove Roles Services.
+3. If the Internet Printing option is checked, clear the check box, click Next, and then click Remove to complete the wizard.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-13591</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>high</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA155</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-14165r3_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA155</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Classified web servers will be afforded physical security commensurate with the classification of its content.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>When data of a classified nature is migrated to a web server, fundamental principles applicable to the safeguarding of classified material must be followed. A classified web server needs to be afforded physical security commensurate with the classification of its content to ensure the protection of the data it houses.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>PECF-2</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Interview the ISSO, the SA, the web administrator, or developers as necessary to determine if a classified web server is afforded physical security commensurate with the classification of its content (i.e., is located in a vault or a room approved for classified storage at the highest classification processed on that system).
+
+Ask what the classification of the web server is. Based on the classification, evaluate the location of the web server to determine if it is approved for storage of that classification level.
+
+If there is a traditional reviewer available, work with him/her to address specific conditions or questions.
+
+If the web server is not appropriately physically protected based on its classification, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Relocate the web server to a location appropriate to classified devices.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-13621</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>high</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG385</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32478r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG385 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>All web server documentation, sample code, example applications, and tutorials must be removed from a production web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web server documentation, sample code, example applications, and tutorials may be an exploitable threat to a web server. A production web server may only contain components that are operationally necessary (i.e., compiled code, scripts, web content, etc.). Delete all directories containing samples and any scripts used to execute the samples.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Navigate to the following folders:
+  inetpub\AdminScripts
+  inetpub\scripts\IISSamples
+  Program Files\Common Files\System\msadc
+2. If the folders contain sample code and documentation, this is a finding.
+
+NOTE: Any non-executable web server documentation or sample file found on the production web server and accessible to web users or non-administrators will be a CAT III finding.
+Any non-executable web server documentation or sample file found on the production web server and accessible only to SAs or to web administrators is permissible and is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Remove sample code and documentation from the web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-13672</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG145</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32479r3_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WG145 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The private web server must use an approved DoD certificate validation process.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The Certificate Revocation List (CRL) is used for a number of reasons, for example, when an employee leaves, certificates expire, or if certificate keys become compromised and are reissued. Without the use of a certificate validation process, the server is vulnerable to accepting expired or revoked certificates. This could allow unauthorized individuals access to the web server. The CRL is a repository comprised of revoked certificate data, usually from many contributing CRL sources. 
+Sites using an Online Certificate Status Protocol (OCSP) rather than CRL download to validate certificates will have obtained and installed an OCSP validation application.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IATS-1, IATS-2</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify Certificate Revocation List (CRL) validation is enabled on the server.
+Open a Command Prompt and enter the following command:
+
+netsh http show sslcert
+
+Note the value assigned to the Verify Client Certificate Revocation element. If the value of the Verify Client Certificate Revocation element is not enabled, this is a finding.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Using vendor documentation as guidance, reconfigure the web server to utilize certificate with an approved certificate validation process:
+netsh http add sslcert
+
+Alternatively, configure existing certificate to validate certifcate revocation:
+
+Open registry, locate HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters\SslBindingInfo\0.0.0.0:443\DefaultSslCertCheckMode
+Modify the value to 0
+Restart server
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-13700</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI100</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-46359r4_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI100 IIS7</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The File System Object component must be disabled.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Some Component Object Model (COM) components are not required for most applications and should be removed if possible.  Most notably, consider disabling the File System Object component; however, this will also remove the Dictionary object. Be aware some programs may require this component (e.g., Commerce Server), so it is highly recommended this be tested completely before implementing on the production web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECSC-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Locate the HKEY_CLASSES_ROOT\CLSID\{0D43FE01-F093-11CF-8940-00A0C9054228} registry key.  If the key exist, the File System Object component is enabled.
+
+2. If the File System Object component is enabled and is not required for operations, this is a finding.
+
+NOTE: If the File System Object component is required for operations and has supporting documentation signed by the ISSO, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Run the following command, with adminstrator priviledges, to unregister the File System Object:  regsvr32 scrrun.dll /u.
+
+Note: Make sure the Administrators group owns and has full permissions to the registry value HKCR\TypeLib\{420B2830-E718-11CF-893D-00A0C9054228}\1.0\0\win32 before trying to unregister the dll.  Without the Administrators group owning and having full control of this key, the unregister command will error.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-25994</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>low</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI091</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32645r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI091</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Directory Browsing must be disabled on the production web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Directory browsing allows the contents of a directory to be displayed upon request from a web client. If directory browsing is enabled for a directory in IIS, users could receive a web page listing the contents of the directory.  If directory browsing is enabled the risk of inadvertently disclosing sensitive content is increased.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECLP-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click the Server.
+3. Double-click the Directory Browsing icon.
+4. Under the Actions Pane verify Directory Browsing is disabled. If not, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click the Server.
+3. Double-click the Directory Browsing icon.
+4. Under the Actions Pane click Disabled.   </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-25999</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI6100</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32650r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI6100</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unspecified file extensions must not be allowed to execute on the production web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>By allowing unspecified file extensions to execute, the web servers attack surface is significantly increased.  This increased risk can be reduced by only allowing specific ISAPI extensions or CGI extensions to run on the web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECLP-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click the Server.
+3. Double-click the ISAPI and CGI restrictions icon.
+4. Click Edit Feature Settings and verify the CGI and ISAPI Modules are NOT checked. If they are checked, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click the Server.
+3. Double-click the ISAPI and CGI restrictions icon.
+4. Click Edit Feature Settings and uncheck the CGI and ISAPI Modules check boxes.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26006</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>low</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI6120</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-32657r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>WA000-WI6120</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A global authorization rule to restrict access must exist on the web server.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Authorization rules can be configured at the server, web site, folder (including Virtual Directories), or file level.  It is recommended that URL Authorization be configured to only grant access to the necessary security principals. Configuring a global Authorization rule that restricts access ensures inheritance of the settings down through the hierarchy of web directories.  This will ensure access to current and future content is only granted to the appropriate principals, mitigating risk of unauthorized access. </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>ECCD-1</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click the Server.
+3. Double-click the Authorization Rules icon.
+4. If any user other then Administrator is listed, this is a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1. Open the IIS Manager.
+2. Click the Server.
+3. Double-click the Authorization Rules icon.
+4. Remove all users other than Administrator.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Web Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>IIS 7.0 WEB SERVER STIG :: Release: 9 Benchmark Date: 23 Oct 2015</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>1392</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>Not_Reviewed</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+        </iSTIG>
+    </STIGS>
+</CHECKLIST>
